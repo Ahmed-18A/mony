@@ -47,10 +47,11 @@ public class MainActivity extends AppCompatActivity {
     public void ch(View view) {
         num=Integer.parseInt(et.getText().toString());
         if(x==1)
-            num=num*3.62;
+            num=num/3.62;
         if(x==2)
-            num=num*3.8;
-        tx.setText(String.valueOf(num));
+            num=num/3.8;
+        String fr=String.format("%.2f",num);
+        tx.setText(fr);
     }
 
     public void del(View view) {
